@@ -1,0 +1,255 @@
+form,div,button{
+    display: flex;
+    flex-direction: column;
+}
+div,button{
+    width: 200px;
+    margin: 0 30px;
+}
+#message{
+    height: 200px;
+    width: 240px;
+    outline: none;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+form{
+    width: 300px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    height: fit-content;
+}
+body{
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    font-family: "Karla", sans-serif;
+    position: relative;
+    /* margin: 20px; */
+    padding: 0;
+}
+span{
+    color: hsl(169, 82%, 27%);
+}
+input[type="radio"]{
+    width: 15px;
+}
+.support, .general{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    margin: 0;
+    height: 50px;
+    line-height: 40px;
+    width: 240px;
+}
+input[type="checkbox"]{
+    width: 20px;
+    margin: 0 10px 0 0;
+}
+.consent{
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+}
+input{
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 240px;
+    height: 40px;
+    outline: none;
+    border: 1px solid hsl(186, 15%, 59%);
+    font-size: 1.2rem;
+}
+textarea{
+    font-size: 1.2rem;
+}
+.querytype{
+    height: fit-content;
+    width: 240px;
+}
+p.checking{
+    margin: 0 30px;
+    line-height: 1.2;
+}
+.required{
+    margin:0 0 10px 0;
+    color: red;
+    display: none;
+}
+.activate{
+    display: block;
+}
+.general{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 40px;
+    width: 240px;
+}
+.support{
+    margin-bottom: 10px;
+    height: 40px;
+    width: 240px;
+}
+.same{
+    height: 40px;
+    margin: 0 5px;
+}
+p{
+    margin: 0;
+    line-height: 40px;
+}
+input[type="submit"]{
+    background-color: hsl(169, 82%, 27%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    height: 42px;
+    margin-bottom: 20px;
+}
+h2{
+    margin-left: 30px;
+}
+#consent{
+    text-align: start;
+    line-height: 1.2;
+}
+.names, .radios{
+    padding: 0;
+    margin: 0;
+}
+#main-box{
+    width: 240px;
+    height: 100px;
+    background-color:hsl(187, 24%, 22%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    position: absolute;
+    display:none ;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 10px;
+}
+#main-box>p{
+    line-height: 1.0;
+    margin: 10px 0;
+    color:  hsl(186, 15%, 59%);
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+#sub{
+    margin: 5px 20px ;
+    margin-left: 10px;
+}
+button{
+    border: 0.5px solid rgb(12, 214, 12);
+    background-color: rgb(12, 214, 12);
+    color: white;
+    text-align: center;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    margin-bottom: 20px;
+}
+input:hover,textarea:hover{
+    cursor: pointer;
+}
+@media (min-width:768px) {
+    body{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        height: 100vh;
+    }
+    .names , .radios{
+        display: flex;
+        flex-direction: row;
+        width: 540px;
+        justify-content: space-between;
+        margin:0 30px;
+    }
+    #fName , #lName{
+        width: 255px;
+    }
+    form{
+        width: 600px;
+    }
+    .general, .support,p , #first-name, .last-name{
+        width: 260px;
+    }
+    #first-name, .last-name{
+        margin-right: 0;
+    }
+    .last-name{
+        margin: 0 0 0 20px;
+    }
+    .radios{
+        width: 540px;
+        justify-content: space-between;
+    }
+    .support{
+        margin: 10px 0;
+    }
+    #email{
+        width: 540px;
+    }
+    #message{
+        width: 540px;
+        height: 100px;
+    }
+    .checking{
+        width: 540px;
+    }
+    #submit{
+        width: 540px;
+        height: 50px;
+    }
+    .names, .radios {
+        margin: 0;
+    }
+    .consent{
+        width: 540px;
+    }
+    #consent{
+        line-height: 40px;
+        width: 100%;
+        text-align: start;
+
+    }
+    .submit, .message{
+        width: 540px;
+    }
+    .same{
+    margin: 0 10px;
+    }
+    #main-box{
+        width: 340px;
+        height: 40px;
+        font-size: 1.7rem;
+        top: 20px;
+    }
+    #sub{
+        width: 280px;
+    }
+    .icon{
+        width: 260px;
+        
+    }
+    h5{
+        font-size: 0.9rem;
+    }
+    #main-box>p{
+        width: 350px;
+        font-size: 0.85rem;
+        margin: 0;
+    }
+}
