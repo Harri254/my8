@@ -10,7 +10,6 @@ let checkbox = document.getElementById('checkbox');
 // let Email = document.getElementsByClassName('forEmail');
 // let Query = document.getElementsByClassName('forQuery');
 // let Consent = document.getElementsByClassName('forConsent');
-console.log(radio1);
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
